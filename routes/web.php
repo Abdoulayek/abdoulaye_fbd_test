@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TriController;
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +18,5 @@ Route::get('/', function () {
     $vgData = DB::table('data')->get();
     return view('show_data', compact('vgData'));
 });
+
+Route::get("tri_ASC", [TriController::class, 'sort_by_ASC'])->name('sort_by_ASC');

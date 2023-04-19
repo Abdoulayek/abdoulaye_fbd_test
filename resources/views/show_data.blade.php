@@ -11,6 +11,8 @@
 
     </head>
     <body>
+        <a href="{{route('sort_by_ASC')}}">Tri ASC</a>
+        <a>Tri DSC</a>
         <table border="1">
             <tr>
                 <th>Rank</th>
