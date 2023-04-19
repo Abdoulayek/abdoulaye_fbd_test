@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $vgData = DB::table('data')->get();
+    return view('show_data', compact('vgData'));
 });
