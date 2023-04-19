@@ -20,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get("tri_ASC", [TriController::class, 'sort_by_ASC'])->name('sort_by_ASC');
+Route::get("tri_DESC", [TriController::class, 'sort_by_DESC'])->name('sort_by_DESC');

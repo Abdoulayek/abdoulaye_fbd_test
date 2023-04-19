@@ -12,7 +12,7 @@
     </head>
     <body>
         <a href="{{route('sort_by_ASC')}}">Tri ASC</a>
-        <a>Tri DSC</a>
+        <a href="{{route('sort_by_DESC')}}">Tri DESC</a>
         <table border="1">
             <tr>
                 <th>Rank</th>
